@@ -1,4 +1,5 @@
 export { Navigation } from './navigation'
 export { Footer } from './footer'
+export { CodeBlock } from './codeblock'
 export { Hero } from './hero'
 export { ThemeSwitch } from './themeSwitch'
