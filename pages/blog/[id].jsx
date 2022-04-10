@@ -2,6 +2,7 @@ import { CodeBlock } from 'components'
 import { Container, Layout } from 'elements'
 import { getAllPostIds, getPostData } from 'lib/posts'
 import ReactMarkdown from 'react-markdown'
+import s from './styles.module.scss'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -27,7 +28,9 @@ export default function Post({ postData }) {
       <Container>
         <article>
           <h1>{title}</h1>
-          <ReactMarkdown components={CodeBlock}>{markdown}</ReactMarkdown>
+          <div className={s.markdown}>
+            <ReactMarkdown components={CodeBlock}>{markdown}</ReactMarkdown>
+          </div>
         </article>
       </Container>
     </Layout>

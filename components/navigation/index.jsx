@@ -16,7 +16,7 @@ export const Navigation = () => {
         <div className={s.desktopNav}>
           <Link href="/">
             <a className={s.logo}>
-              YAZDUN<span>.com</span>
+              Yazdun<span>.</span>
             </a>
           </Link>
           <List />
