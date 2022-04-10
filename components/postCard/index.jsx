@@ -9,8 +9,8 @@ export const PostCard = ({ post }) => {
 
   return (
     <Link href={`/blog/${id}`}>
-      <a>
-        <article className={s.card}>
+      <a className={s.card}>
+        <article>
           <h2 className={s.title}>{title}</h2>
           <p>
             <Date dateString={date} /> -{' '}

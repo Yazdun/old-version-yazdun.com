@@ -1,6 +1,24 @@
+@import '../../scss/mixins';
+
 .card {
   margin: var(--gap) 0;
   color: var(--foreground--2);
+  border-radius: var(--border--radius--1);
+  transition: 0.2s linear;
+  display: block;
+
+  &:focus-visible {
+    box-shadow: 0px 0px 0px 5px var(--background--1),
+      0px 0px 0px 8px var(--foreground--1);
+  }
+
+  @include breakpoint-up(laptop) {
+    &:hover,
+    :focus-visible {
+      box-shadow: 0px 0px 0px 6px var(--background--1),
+        0px 0px 0px 8px var(--foreground--1);
+    }
+  }
 }
 
 .desc {

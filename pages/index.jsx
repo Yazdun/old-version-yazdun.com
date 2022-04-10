@@ -19,10 +19,15 @@ export default function Home({ allPostsData }) {
       <Hero />
       <hr className="hr" />
       <Container noPadding>
+        <h2>Latest on blog 🚀</h2>
         {allPostsData.map((post, index) => {
           return <PostCard post={post} key={index} />
         })}
+        <Link href="/blog">
+          <a className="link">➜ More articles</a>
+        </Link>
       </Container>
+      <hr className="hr" />
     </Layout>
   )
 }
