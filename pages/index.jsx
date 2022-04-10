@@ -1,6 +1,5 @@
 import { Hero, PostCard, Profile } from 'components'
 import { Container, Layout } from 'elements'
-import Image from 'next/image'
 import Link from 'next/link'
 import { getSortedPostsData } from '../lib/posts'
 

@@ -10,6 +10,7 @@
   @include breakpoint-up(tablet) {
     padding: 2rem;
     box-shadow: var(--shadow--1);
+    margin: 2rem 0;
   }
 
   @include breakpoint-up(laptop) {
