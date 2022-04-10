@@ -1,12 +1,12 @@
 :root {
   --foreground--1: hsl(212, 24%, 26%);
-  --foreground--2: hsl(210, 20%, 40%);
+  --foreground--2: hsl(226, 13%, 56%);
   --background--1: hsl(228, 33%, 97%);
   --background--2: hsl(228, 33%, 94%);
   --background--3: hsl(0, 0%, 19%);
   --clr--transparent--1: rgba(0, 0, 0, 0.05);
 
-  --clr--active--1: hsl(216, 79%, 62%);
+  --clr--active--1: hsl(258, 59%, 62%);
   --clr--danger--1: hsl(358, 79%, 66%);
   --clr--success--1: hsl(155, 100%, 50%);
   --clr--success--2: hsl(157, 65%, 57%);
@@ -18,7 +18,7 @@
   --clr--border--3: hsl(222, 17%, 47%);
   --shadow--1: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
-  --max--width: 67.5rem;
+  --max--width: 51rem;
   --border--radius--1: 0.4rem;
   --border--radius--2: 1.25rem;
   --gap: 4rem;
@@ -29,14 +29,15 @@
 
 [data-theme='dark'] {
   --foreground--1: hsl(0, 0%, 93%);
-  --foreground--2: hsl(180, 1%, 77%);
-  --clr--active--1: hsl(224, 100%, 70%);
+  --foreground--2: hsl(216, 15%, 59%);
+  --clr--active--1: hsl(258, 59%, 59%);
   --clr--success--1: hsl(157, 65%, 57%);
 
   --clr--transparent--1: rgba(129, 119, 139, 0.178);
 
-  --background--2: hsl(216, 18%, 15%);
   --background--1: hsl(0, 0%, 11%);
+  --background--1: hsl(219, 25%, 13%);
+  // --background--2: hsl(216, 18%, 15%);
 
   --clr--border--1: hsl(0, 0%, 28%);
 

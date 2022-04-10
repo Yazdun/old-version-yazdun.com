@@ -1,7 +1,7 @@
-import { Hero } from 'components'
+import { Hero, PostCard } from 'components'
 import { Container, Layout } from 'elements'
+import Image from 'next/image'
 import Link from 'next/link'
-
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
@@ -17,14 +17,10 @@ export default function Home({ allPostsData }) {
   return (
     <Layout title="Yazdun | Homepage" url="/">
       <Hero />
-      <Container>
+      <hr className="hr" />
+      <Container noPadding>
         {allPostsData.map((post, index) => {
-          const { title, id } = post
-          return (
-            <Link href={`/blog/${id}`} key={index}>
-              <a style={{ display: 'block' }}>{title}</a>
-            </Link>
-          )
+          return <PostCard post={post} key={index} />
         })}
       </Container>
     </Layout>
