@@ -21,14 +21,13 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+  const { title, description, image, markdown, id, date } = postData
   return (
-    <Layout>
+    <Layout title={title} desc={description} image={image} url={id}>
       <Container>
         <article>
-          <h1>{postData.title}</h1>
-          <ReactMarkdown components={CodeBlock}>
-            {postData.markdown}
-          </ReactMarkdown>
+          <h1>{title}</h1>
+          <ReactMarkdown components={CodeBlock}>{markdown}</ReactMarkdown>
         </article>
       </Container>
     </Layout>

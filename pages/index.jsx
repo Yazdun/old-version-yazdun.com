@@ -1,4 +1,4 @@
-import { Hero, PostCard } from 'components'
+import { Hero, PostCard, Profile } from 'components'
 import { Container, Layout } from 'elements'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
       <Hero />
       <hr className="hr" />
       <Container noPadding>
-        <h2>Latest on blog 🚀</h2>
+        <h2 style={{ fontSize: '1.5rem' }}>Latest on blog 🚀</h2>
         {allPostsData.map((post, index) => {
           return <PostCard post={post} key={index} />
         })}
@@ -28,6 +28,9 @@ export default function Home({ allPostsData }) {
         </Link>
       </Container>
       <hr className="hr" />
+      <Container noPadding>
+        <Profile />
+      </Container>
     </Layout>
   )
 }

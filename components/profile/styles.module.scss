@@ -1,0 +1,54 @@
+@import '../../scss/mixins';
+
+.profile {
+  margin: var(--gap) 0;
+
+  width: 100%;
+
+  .text {
+    margin: 1rem 0;
+  }
+
+  @include breakpoint-up(laptop) {
+    display: flex;
+    align-items: flex-start;
+
+    .text {
+      margin: 0;
+      // margin-left: 2rem;
+    }
+  }
+}
+
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 13rem;
+  display: flex;
+  margin: auto;
+
+  @include breakpoint-up(laptop) {
+    min-width: 7rem;
+    max-width: 7rem;
+    margin: 0;
+  }
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  margin-top: 0.5rem;
+}
+
+.info {
+  color: var(--foreground--2);
+
+  strong {
+    color: var(--foreground--1);
+  }
+}
