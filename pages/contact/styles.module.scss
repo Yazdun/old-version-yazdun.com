@@ -1,0 +1,78 @@
+@import '../../scss/mixins';
+
+.contact {
+  max-width: 30rem;
+  margin: auto;
+  hr {
+    margin: 2rem 0;
+  }
+
+  header {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--clr--transparent--1);
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 1rem;
+  }
+
+  header p {
+    color: var(--foreground--2);
+  }
+
+  @include breakpoint-up(desktop) {
+    max-width: var(--max--width);
+    display: flex;
+    // align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: var(--shadow--1);
+    border-radius: var(--border--radius--1);
+
+    header {
+      margin: 0;
+      padding: 0;
+      border: none;
+      padding: 2rem;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form {
+      padding: 2rem;
+      background-color: var(--background--2);
+      width: 50%;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  max-width: 15rem;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  font-size: 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2) translateY(-2px);
+  }
+}
+
+.illu {
+  display: none;
+  @include breakpoint-up(desktop) {
+    display: flex;
+    align-self: stretch;
+    margin: auto;
+  }
+}

@@ -21,12 +21,9 @@ export default function Blog({ allPostsData }) {
       <Container sx={s.container}>
         <header className={s.header}>
           <h1 className={s.title}>
-            Developer Blog <span>.</span>
+            Blog <span>.</span>
           </h1>
-          <p className={s.desc}>
-            Welcome to my blog ! Here You can find interesting articles about
-            JavaScript and Web Development
-          </p>
+          <p className={s.desc}>Articles about web development</p>
         </header>
       </Container>
 

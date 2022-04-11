@@ -1,5 +1,5 @@
 ---
-title: 'Bash Script Tool Kit'
+title: 'Bash script tool kit'
 image: '/posts/thumbnail.jpg'
 description:
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry.

@@ -4,24 +4,21 @@ import { useForm, FormProvider } from 'react-hook-form'
 import { EmailInput, isError, MessageInput, NameInput } from 'utils'
 import { SuccessModal } from './successModal'
 import { useState } from 'react'
-import { SEND_MESSAGE } from 'services'
 
 export const ContactForm = () => {
   const [show, setShow] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [email, setEmail] = useState(null)
 
   const methods = useForm()
   return (
     <>
       <FormProvider {...methods}>
-        <form
-          onSubmit={methods.handleSubmit(data =>
-            xPost(SEND_MESSAGE, data, execute),
-          )}
-        >
+        <form onSubmit={methods.handleSubmit(data => console.log(data))}>
           <Input {...EmailInput} />
           <Input {...NameInput} />
           <Textarea {...MessageInput} />
-          <ServerErrors errors={serverErrors} />
+          {/* <ServerErrors errors={serverErrors} /> */}
           <Button
             active
             fullwidth

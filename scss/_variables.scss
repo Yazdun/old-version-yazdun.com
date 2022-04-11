@@ -15,12 +15,12 @@
 
   --clr--warn--1: hsl(39, 100%, 50%);
   --clr--neutral--1: hsl(222, 17%, 47%);
-  --clr--border--1: hsl(0, 0%, 81%);
+  --clr--border--1: rgba(0, 0, 0, 0.1);
   --clr--border--2: hsl(222, 17%, 47%);
   --clr--border--3: hsl(222, 17%, 47%);
   --shadow--1: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
-  --max--width: 51rem;
+  --max--width: 55rem;
   --border--radius--1: 0.4rem;
   --border--radius--2: 1.25rem;
   --gap: 4rem;
@@ -36,8 +36,7 @@
   --foreground--1: hsl(0, 0%, 93%);
   --foreground--2: hsl(216, 15%, 59%);
   --foreground--3: hsl(209, 3%, 89%);
-  --clr--active--1: hsl(232, 100%, 80%);
-  // --clr--active--1: #99a7ff;
+  --clr--active--1: hsl(232, 100%, 75%);
   --clr--success--1: hsl(157, 65%, 57%);
 
   --clr--transparent--1: rgba(129, 119, 139, 0.178);
@@ -46,7 +45,7 @@
   --background--2: hsl(217, 23%, 22%);
   --background--3: hsl(216, 18%, 25%);
 
-  --clr--border--1: hsl(0, 0%, 28%);
+  --clr--border--1: rgba(129, 119, 139, 0.278);
 
   --shadow--1: rgba(157, 145, 168, 0.178) 0px 0px 0px 1px;
 }
