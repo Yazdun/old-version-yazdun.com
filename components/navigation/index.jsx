@@ -7,6 +7,8 @@ import s from './styles.module.scss'
 import { HiMenu } from 'react-icons/hi'
 import { CgClose } from 'react-icons/cg'
 import { useOnClickOutside } from 'hooks'
+import Animated from 'react-mount-animation'
+import { mountAnimation } from './anim'
 import cn from 'classnames'
 
 export const Navigation = () => {
@@ -62,27 +64,30 @@ const Menu = () => {
         {show ? <CgClose /> : <HiMenu />}
       </button>
 
-      {show && (
-        <ul className={s.menuItems}>
-          {links.map(link => {
-            const { mobileTitle, icon, desc, url, key } = link
-            return (
-              <li key={key}>
-                <Link href={url}>
-                  <a title={desc}>
-                    {mobileTitle}
-                    {icon}
-                  </a>
-                </Link>
-              </li>
-            )
-          })}
-          <li className={s.theme}>
-            Dark mode
-            <ThemeSwitch />
-          </li>
-        </ul>
-      )}
+      <Animated.ul
+        mountAnim={mountAnimation}
+        time={0.5}
+        show={show}
+        className={s.menuItems}
+      >
+        {links.map(link => {
+          const { mobileTitle, icon, desc, url, key } = link
+          return (
+            <li key={key}>
+              <Link href={url}>
+                <a title={desc}>
+                  {mobileTitle}
+                  {icon}
+                </a>
+              </Link>
+            </li>
+          )
+        })}
+        <li className={s.theme}>
+          Dark mode
+          <ThemeSwitch />
+        </li>
+      </Animated.ul>
     </div>
   )
 }

@@ -28,7 +28,6 @@
   font-weight: 700;
   font-size: 1.3rem;
   font-family: var(--font--sec);
-  font-weight: 700;
 
   span {
     color: var(--clr--active--1);
@@ -91,7 +90,7 @@
   text-transform: capitalize;
   padding-left: 1.5rem;
   margin-left: 1.5rem;
-  border-left: 2px solid var(--foreground--1);
+  border-left: 1px solid var(--foreground--1);
 
   li {
     margin-right: 1.5rem;
