@@ -5,7 +5,7 @@ import readingTime from 'reading-time'
 import s from './styles.module.scss'
 
 export const PostCard = ({ post }) => {
-  const { content, description, date, title, id } = post
+  const { readingTime, description, date, title, id } = post
 
   return (
     <Link href={`/blog/${id}`}>
@@ -13,8 +13,7 @@ export const PostCard = ({ post }) => {
         <article>
           <h2 className={s.title}>{title}</h2>
           <p>
-            <Date dateString={date} /> -{' '}
-            <span>{readingTime(content).text}</span>
+            <Date dateString={date} /> - <span>{readingTime}</span>
           </p>
           <p className={s.desc}>{description}</p>
         </article>

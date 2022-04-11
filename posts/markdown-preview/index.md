@@ -14,7 +14,8 @@ with the release of Letraset sheets containing Lorem Ipsum passages, and more
 recently with desktop publishing software like Aldus PageMaker including
 versions of Lorem Ipsum
 
-- item one
+- recently with desktop publishing software like Aldus PageMaker including
+  recently with desktop publishing software like Aldus PageMaker including
 - item two
 - item three
 

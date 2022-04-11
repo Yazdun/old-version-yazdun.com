@@ -2,6 +2,11 @@
 
 .header {
   text-align: center;
+
+  @include breakpoint-up(laptop) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .container {
@@ -22,15 +27,12 @@
 }
 
 .title {
-  p {
-    color: var(--foreground--2);
-  }
   span {
     color: var(--clr--active--1);
   }
 }
 
-// blog post
+// [id] and markdown styles
 
 .info {
   margin-bottom: var(--gap);
@@ -97,7 +99,8 @@
     margin-bottom: 2rem;
 
     li {
-      margin: 1rem 0;
+      margin: 0.5rem 0;
+      line-height: 2.2rem;
     }
   }
 

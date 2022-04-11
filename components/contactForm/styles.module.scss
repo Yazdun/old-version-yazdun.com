@@ -1,0 +1,47 @@
+@import '../../scss/mixins';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--zindex--modal);
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--background--1);
+  padding: 2rem;
+  border-radius: var(--border--radius--1);
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  position: relative;
+
+  p {
+    color: var(--foreground--2);
+    margin-top: 1rem;
+    font-size: 1rem;
+    strong {
+      color: var(--foreground--1);
+    }
+  }
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+.close {
+  display: flex;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}

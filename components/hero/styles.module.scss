@@ -19,20 +19,27 @@
 
 .buttons {
   width: 100%;
-  max-width: 22rem;
+  max-width: 24rem;
   margin: auto;
 }
 
 .btn {
   padding: 1rem;
-  background-color: var(--clr--neutral--1);
+  border: 2px solid var(--clr--active--1);
   width: 100%;
-  max-width: 8rem;
+  max-width: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  color: white;
+  color: var(--clr--active--1);
+  font-family: var(--font--sec);
+  font-weight: bold;
+
+  &:hover {
+    background-color: var(--clr--active--1);
+    color: white;
+  }
   @include focus-visible;
 }
 
