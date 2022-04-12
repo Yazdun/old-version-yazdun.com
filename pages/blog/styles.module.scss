@@ -37,6 +37,10 @@
 .info {
   margin-bottom: var(--gap);
 
+  h1 {
+    font-size: 2rem;
+  }
+
   p {
     color: var(--foreground--2);
   }
@@ -117,6 +121,14 @@
     display: block;
     max-width: 100%;
     border-radius: var(--border--radius--1);
+    margin: 2rem 0;
+  }
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid var(--clr--transparent--1);
+    border-bottom: 1px solid var(--clr--transparent--1);
     margin: 2rem 0;
   }
 }
