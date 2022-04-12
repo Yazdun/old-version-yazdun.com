@@ -25,22 +25,15 @@
 
 .btn {
   padding: 1rem;
-  border: 2px solid var(--clr--active--1);
+  box-shadow: var(--shadow--1);
   width: 100%;
   max-width: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  color: var(--clr--active--1);
   font-family: var(--font--sec);
   font-weight: bold;
-
-  &:hover {
-    background-color: var(--clr--active--1);
-    color: white;
-  }
-  @include focus-visible;
 }
 
 @include breakpoint-up(tablet) {
@@ -51,6 +44,10 @@
 
   .btn {
     margin: 0;
+
+    &:hover {
+      background-color: var(--background--2);
+    }
   }
 }
 
