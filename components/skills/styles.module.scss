@@ -1,0 +1,60 @@
+@import '../../scss/mixins';
+
+.skills {
+  text-align: center;
+  width: 100%;
+  max-width: var(--max--width);
+  margin: auto;
+
+  h2 {
+    margin-bottom: var(--gap);
+  }
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 1rem;
+  grid-gap: 1rem;
+
+  @include breakpoint-up(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.2rem;
+  }
+
+  @include breakpoint-up(laptop) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.skillCard {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0;
+  border-radius: var(--border--radius--1);
+  font-weight: 500;
+  svg {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &:focus-visible {
+    box-shadow: 0px 0px 0px 5px var(--background--1),
+      0px 0px 0px 8px var(--clr--active--1);
+    .img {
+      transform: scale(1.15);
+    }
+  }
+
+  @include breakpoint-up(laptop) {
+    &:hover {
+      box-shadow: 0px 0px 0px 5px var(--background--1),
+        0px 0px 0px 8px var(--clr--active--1);
+      .img {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

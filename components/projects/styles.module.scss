@@ -1,0 +1,135 @@
+@import '../../scss/mixins';
+
+.title {
+  text-align: center;
+}
+
+.container {
+  padding: 0;
+
+  @include breakpoint-up(tablet) {
+    padding: 0 1rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: var(--gap) 0;
+
+  @include breakpoint-up(laptop) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.icon {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--foreground--1);
+
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: var(--foreground--2);
+  font-weight: 500;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow--1);
+
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  @include breakpoint-up(tablet) {
+    border-radius: var(--border--radius--1);
+    background-color: var(--background--1);
+    box-shadow: var(--shadow--1);
+  }
+
+  @include breakpoint-up(laptop) {
+    padding-bottom: 6rem;
+  }
+}
+
+.info {
+  margin-bottom: 2rem;
+  @include breakpoint-up(laptop) {
+    margin: 0;
+    height: 10rem;
+  }
+}
+
+.features {
+  padding-top: 2rem;
+  border-top: 1px solid var(--clr--border--1);
+}
+
+.items {
+  li {
+    padding: 0.5rem 0;
+    color: var(--foreground--2);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  li svg {
+    margin-right: 0.5rem;
+    color: var(--clr--success--2);
+  }
+}
+
+.links {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  a svg {
+    margin-right: 0.2rem;
+  }
+
+  @include breakpoint-up(laptop) {
+    margin: 0;
+    position: absolute;
+    bottom: 2rem;
+    border-radius: var(--border--radius--1);
+    left: 0;
+  }
+}
+
+.link {
+  color: var(--clr--active--1);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  svg {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+  }
+}

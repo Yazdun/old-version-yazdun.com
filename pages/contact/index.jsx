@@ -13,13 +13,7 @@ import Image from 'next/image'
 
 export default function Contact() {
   return (
-    <Layout
-      title="Yazdun | Contact"
-      desc="You can contact me by filling this page's form"
-      keywords="Yazdun, Yazdun Fathali, یزدان, یزدان فتحعلی, yazdun"
-      url="about"
-      image="https://res.cloudinary.com/dakts9ect/image/upload/v1649222587/blog-previews/contact_hak2x2.jpg"
-    >
+    <Layout title="Yazdun | Contact" desc="Let's get in touch" url="contact">
       <Container>
         <div className={s.contact}>
           <header>
