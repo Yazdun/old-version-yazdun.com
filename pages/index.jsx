@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
       <hr className="hr" />
       <Container noPadding>
         <h2 style={{ fontSize: '1.5rem' }}>Latest on blog 🚀</h2>
-        {allPostsData.map((post, index) => {
+        {allPostsData.slice(0, 3).map((post, index) => {
           return <PostCard post={post} key={index} />
         })}
         <Link href="/blog">

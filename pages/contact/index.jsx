@@ -23,7 +23,9 @@ export default function Contact() {
       <Container>
         <div className={s.contact}>
           <header>
-            <h1>Let&apos;s get in touch</h1>
+            <h1>
+              Let<span>&apos;</span>s get in touch
+            </h1>
             <p>Contact me through social medias or email form</p>
             <div className={s.illu}>
               <Image src={SpaceImg} alt="Yazdun" />
