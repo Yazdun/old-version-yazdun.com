@@ -16,7 +16,7 @@ export default function Blog({ allPostsData }) {
   return (
     <Layout
       title="Yazdun | Blog"
-      desc="Yazdun's blog, where you can find articles about web development and sharpen your coding skills"
+      desc="Read interesting articles about web development"
     >
       <Container sx={s.container}>
         <header className={s.header}>

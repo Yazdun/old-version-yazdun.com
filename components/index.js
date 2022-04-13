@@ -1,6 +1,6 @@
 export { Navigation } from './navigation'
 export { Footer } from './footer'
-export { CodeBlock } from './codeblock'
+export { LightCodeBlock, DarkCodeBlock } from './codeblock'
 export { PostCard } from './postCard'
 export { Hero } from './hero'
 export { Profile } from './profile'

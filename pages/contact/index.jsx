@@ -13,7 +13,11 @@ import Image from 'next/image'
 
 export default function Contact() {
   return (
-    <Layout title="Yazdun | Contact" desc="Let's get in touch" url="contact">
+    <Layout
+      title="Yazdun | Contact"
+      desc="Contact me via social medias or email form"
+      url="contact"
+    >
       <Container>
         <div className={s.contact}>
           <header>
