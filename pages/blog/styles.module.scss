@@ -119,9 +119,11 @@
 
   img {
     display: block;
+    width: 100%;
     max-width: 100%;
     border-radius: var(--border--radius--1);
     margin: 2rem 0;
+    box-shadow: var(--shadow--1);
   }
 
   hr {
