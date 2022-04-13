@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import {
   materialLight,
-  materialOceanic,
+  atomDark,
 } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export const LightCodeBlock = {
@@ -31,7 +31,7 @@ export const DarkCodeBlock = {
 
     return !inline && match ? (
       <SyntaxHighlighter
-        style={materialOceanic}
+        style={atomDark}
         language={match[1]}
         PreTag="div"
         {...props}
