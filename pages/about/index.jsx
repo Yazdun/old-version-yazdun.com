@@ -6,8 +6,9 @@ export default function About() {
   return (
     <Layout
       title="Yazdun | About"
-      desc="I'm full stack web developer, You can read about me and view my projects on this page"
+      desc="I'm full stack web developer, Read more about me and view my projects"
       url="about"
+      image="https://res.cloudinary.com/dakts9ect/image/upload/v1649943963/opengraph/about_crnuyx.jpg"
     >
       <AboutHero />
       <hr className="hr gap" />

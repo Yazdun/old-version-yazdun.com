@@ -7,10 +7,9 @@ export default function Custom500() {
     <Layout title="Yazdun | Error" desc="Error ! something went wrong">
       <Container sx={s.error}>
         <FaServer style={{ fontSize: '6rem' }} />
-        <h1>Oops !</h1>
+        <h1>Something went wrong</h1>
         <p>
-          Something went wrong ! Looks like this page doesn&apos;t exist or has
-          been deleted
+          Oops ! Looks like this page doesn&apos;t exist or has been deleted
         </p>
       </Container>
     </Layout>

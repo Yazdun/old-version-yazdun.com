@@ -1,6 +1,6 @@
 ---
 title: 'Javascript Fetch API'
-image: 'https://images.pexels.com/photos/845406/pexels-photo-845406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+image: 'https://res.cloudinary.com/dakts9ect/image/upload/v1649943966/opengraph/javascript-fetch-api_dtyedq.png'
 description: 'Learn Javascript Fetch API by building a simple application'
 date: '2022-04-13'
 ---

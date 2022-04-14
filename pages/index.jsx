@@ -14,7 +14,12 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout title="Yazdun | Homepage" url="/">
+    <Layout
+      title="Yazdun | Homepage"
+      desc="Fullstack web developer, with a focus on React ecosystem"
+      url="/"
+      image="https://res.cloudinary.com/dakts9ect/image/upload/v1649943963/opengraph/home_ba1git.jpg"
+    >
       <Hero />
       <hr className="hr" />
       <Container noPadding>

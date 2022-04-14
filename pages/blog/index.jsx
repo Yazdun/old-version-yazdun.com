@@ -17,6 +17,8 @@ export default function Blog({ allPostsData }) {
     <Layout
       title="Yazdun | Blog"
       desc="Read interesting articles about web development"
+      url="blog"
+      image="https://res.cloudinary.com/dakts9ect/image/upload/v1649943963/opengraph/blog_nyfd7o.jpg"
     >
       <Container sx={s.container}>
         <header className={s.header}>

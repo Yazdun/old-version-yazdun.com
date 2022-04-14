@@ -17,6 +17,7 @@ export default function Contact() {
       title="Yazdun | Contact"
       desc="Contact me via social medias or email form"
       url="contact"
+      image="https://res.cloudinary.com/dakts9ect/image/upload/v1649943964/opengraph/contact_pixik0.jpg"
     >
       <Container>
         <div className={s.contact}>
