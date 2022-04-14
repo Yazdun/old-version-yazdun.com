@@ -1,10 +1,12 @@
-import { CodeBlock, DarkCodeBlock, LightCodeBlock } from 'components'
+import { DarkCodeBlock, LightCodeBlock, Profile } from 'components'
 import { Container, Date, Layout } from 'elements'
 import { getAllPostIds, getPostData } from 'lib/posts'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import readingTime from 'reading-time'
 import s from './styles.module.scss'
+import { BsTwitter, BsGithub } from 'react-icons/bs'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -47,6 +49,29 @@ export default function Post({ postData }) {
             </ReactMarkdown>
           </div>
         </article>
+        <hr className="hr" />
+        <div className={s.socials}>
+          <Link
+            href={`https://twitter.com/search?q=https%3A%2F%2Fyazdun.com%2Fblog%2F${id}&src=typed_query`}
+          >
+            <a className="link" target="_blank">
+              <BsTwitter />
+              Discuss on Twitter
+            </a>
+          </Link>
+          <Link
+            href={`https://github.com/Yazdun/yazdun.com/tree/main/posts/${id}`}
+          >
+            <a className="link" target="_blank">
+              <BsGithub />
+              Edit on Github
+            </a>
+          </Link>
+        </div>
+      </Container>
+      <hr className="hr" />
+      <Container noPadding>
+        <Profile />
       </Container>
     </Layout>
   )

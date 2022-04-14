@@ -46,6 +46,22 @@
   }
 }
 
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    line-height: 2.2rem;
+  }
+
+  a svg {
+    margin-right: 0.5rem;
+  }
+}
+
 .markdown {
   color: var(--foreground--3);
 
@@ -66,7 +82,7 @@
   p code {
     font-weight: bold;
     padding: 0.5rem;
-    background-color: var(--background--2);
+    background-color: var(--background--3);
     border-radius: var(--border--radius--1);
     color: var(--foreground--1);
   }

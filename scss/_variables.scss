@@ -33,24 +33,17 @@
 }
 
 [data-theme='dark'] {
+  --background--1: hsl(0, 0%, 10%);
+  --background--2: hsl(210, 6%, 12%);
+  --background--3: hsl(216, 18%, 18%);
   --foreground--1: hsl(0, 0%, 93%);
   --foreground--2: hsl(216, 15%, 59%);
   --foreground--3: hsl(209, 3%, 89%);
 
   --clr--active--1: hsl(232, 100%, 75%);
   --clr--success--1: hsl(157, 65%, 57%);
-
   --clr--transparent--1: rgba(129, 119, 139, 0.178);
 
-  // --background--1: hsl(219, 25%, 13%);
-  --background--1: hsl(0, 0%, 10%);
-
-  // --background--2: hsl(217, 23%, 22%);
-  --background--2: hsl(216, 18%, 18%);
-
-  --background--2: hsl(210, 6%, 12%);
-
   --clr--border--1: rgba(129, 119, 139, 0.278);
-
   --shadow--1: rgba(157, 145, 168, 0.21) 0px 0px 0px 1px;
 }
