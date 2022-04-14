@@ -11,8 +11,9 @@ has a built-in method called `fetch()` which makes handling API requests pretty
 easy.
 
 In this tutorial we are going to build a very simple app to learn basics of
-`fetch()` , You can find the [source code on codepen](https://codepen.io/) . Now
-let's take a brief look at Fetch API before building our app.
+`fetch()` , You can find the
+[source code on codepen](https://codepen.io/yazdun/pen/ZEvqXxE) . Now let's take
+a brief look at Fetch API before building our app.
 
 ---
 
@@ -225,4 +226,4 @@ can play around with and create your own cool apps.
 - [Random Data API](https://random-data-api.com/)
 
 Also if you got stuck anywhere on this tutorial, You can find the
-[final source code Codepen]().
+[final source code Codepen](https://codepen.io/yazdun/pen/ZEvqXxE).
