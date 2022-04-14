@@ -51,7 +51,9 @@ export default function Post({ postData }) {
           </div>
           <div className={s.markdown}>
             <ReactMarkdown
-              components={mounted && isDark ? DarkCodeBlock : LightCodeBlock}
+              components={
+                mounted ? (isDark ? LightCodeBlock : DarkCodeBlock) : null
+              }
             >
               {markdown}
             </ReactMarkdown>
