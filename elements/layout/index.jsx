@@ -8,6 +8,7 @@ export const Layout = ({ children, title, desc, keywords, image, url }) => {
       <NextSeo
         title={title}
         description={desc}
+        additionalLinkTags={[{ rel: 'icon', href: '/favicon.png' }]}
         openGraph={{
           url: `https://yazdun.com${url}`,
           title: title,
