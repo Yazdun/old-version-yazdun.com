@@ -7,6 +7,7 @@ import ReactMarkdown from 'react-markdown'
 import readingTime from 'reading-time'
 import s from './styles.module.scss'
 import { BsTwitter, BsGithub } from 'react-icons/bs'
+import { useState, useEffect } from 'react'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -28,10 +29,15 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   const { title, description, image, markdown, id, date } = postData
   const { theme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
   const isDark =
     theme === 'dark' ||
     (theme === 'system' &&
       window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+  useEffect(() => setMounted(true), [])
+
   return (
     <Layout title={title} desc={description} image={image} url={id}>
       <Container>
@@ -44,7 +50,9 @@ export default function Post({ postData }) {
             </p>
           </div>
           <div className={s.markdown}>
-            <ReactMarkdown components={isDark ? DarkCodeBlock : LightCodeBlock}>
+            <ReactMarkdown
+              components={mounted && isDark ? DarkCodeBlock : LightCodeBlock}
+            >
               {markdown}
             </ReactMarkdown>
           </div>
