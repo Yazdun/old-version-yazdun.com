@@ -71,7 +71,7 @@ export default function Post({ postData }) {
       </Container>
       <hr className="hr" />
       <Container noPadding>
-        <Profile />
+        <Profile title="Written by Yazdun" />
       </Container>
     </Layout>
   )
