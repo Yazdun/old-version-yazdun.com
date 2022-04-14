@@ -2,7 +2,7 @@ import { Container, Layout } from 'elements'
 import { FaServer } from 'react-icons/fa'
 import s from './styles.module.scss'
 
-export default function NotFound() {
+export default function Custom500() {
   return (
     <Layout title="Yazdun | 404" desc="500 ! something wrong with our servers">
       <Container sx={s.error}>

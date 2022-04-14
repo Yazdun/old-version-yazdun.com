@@ -1,7 +1,8 @@
 import { Container, Layout } from 'elements'
 import { VscDebugDisconnect } from 'react-icons/vsc'
 import s from './styles.module.scss'
-export default function NotFound() {
+
+export default function Custom404() {
   return (
     <Layout title="Yazdun | 404" desc="Oops ! This pages does not exist">
       <Container sx={s.error}>
