@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://www.frontendmentor.io/profile/Yazdun">
+  <a href="https://yazdun.com/">
     <img src="./public/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
