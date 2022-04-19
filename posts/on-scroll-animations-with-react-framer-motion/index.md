@@ -7,10 +7,10 @@ date: '2022-04-19'
 ---
 
 Lately I was working on
-[rest countries api](https://yazdun-countries.netlify.app/) and also playing
-around with [react framer motion](https://www.framer.com/motion/), Then I found
-out the most awesome thing ! with framer motions, You can literally add on
-scroll animation to your elements by 3 lines of codes 😲
+[rest countries api](https://yazdun-rest-countries.netlify.app/) and also
+playing around with [react framer motion](https://www.framer.com/motion/), Then
+I found out the most awesome thing ! with framer motions, You can literally add
+on scroll animation to your elements by 3 lines of codes 😲
 
 I mean, You can achieve the same thing with Vanilla js too, but it requires some
 configuration and add some unnecessary complexity to your codebase which becomes
