@@ -44,11 +44,7 @@ import s from './styles.module.scss'
 export const Card = ({ country }) => {
   const { name, population, region, capital, flags, alpha3Code } = country
   return (
-    <div
-      className={s.card}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-    >
+    <div className={s.card}>
       <Link href={`/country/${alpha3Code}`}>
         <a>
           <img className={s.img} src={flags.png} alt={name} />
