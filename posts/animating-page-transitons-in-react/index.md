@@ -11,7 +11,7 @@ answer is HELL YES ! Not long ago I spent so much time on this matter and tried
 so many different npm packages and different libraries, even tried to create my
 own solution but I got nowhere. But lately I've started using
 [framer motion](https://www.framer.com/), and realized with some short lines of
-code, You can easily create awesome page transition.
+code, You can easily create awesome page transitions.
 
 Before getting into codes, I want to further explain the issue and dive deeper
 into this topic.
@@ -37,9 +37,9 @@ so your component will look like this 👇
 ![React component](https://res.cloudinary.com/dakts9ect/image/upload/v1651227216/blog-images/ezgif-3-df84a65548_icjlpo.gif 'React component')
 
 As you can see, we have smooth animation on mount, but as soon as we press
-unmount, React removes the component from DOM and we don't get a chance to show
-exit animation. Here framer motion comes to our help, with some configuration we
-will be able to add smooth exit animation to our component 👇
+unmount, React removes the component from the DOM and we don't get a chance to
+show exit animation. Here framer motion comes to our help, with some
+configuration we will be able to add smooth exit animation to our component 👇
 
 ![React component](https://res.cloudinary.com/dakts9ect/image/upload/v1651227612/blog-images/ezgif-3-37c9b233a4_mlwphx.gif 'React component')
 
@@ -76,7 +76,7 @@ Here is the quick explaination of the project structure :
   and then import it inside `App.js`.
 
 Now it's time to tell framer motion that we want to animate our page
-transitions, We do that by opening `src/pages/AppRoutes`. We must put all our
+transitions, We do that by opening `/pages/AppRoutes`. We must put all our
 routes inside `AnimatePresence` component which will be imported from framer
 motion, Your `AppRoutes` will be looked like this 👇
 
