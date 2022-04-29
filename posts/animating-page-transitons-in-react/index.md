@@ -1,5 +1,5 @@
 ---
-title: 'How to animate react page transitions in react'
+title: 'How to animate react page transitions'
 image: 'https://res.cloudinary.com/dakts9ect/image/upload/v1651237128/opengraph/post_ei2ydv.jpg'
 description:
   'Animated react page transition with react router 6 and framer motion'
