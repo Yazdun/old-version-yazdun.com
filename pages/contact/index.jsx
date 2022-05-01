@@ -78,10 +78,4 @@ const socials = [
     url: 'https://t.me/yazdunx',
     key: 'pEHLxVO4rE',
   },
-  {
-    title: 'Whatsapp',
-    icon: <FaWhatsapp />,
-    url: 'https://api.whatsapp.com/send/?phone=989201378001&text&app_absent=0',
-    key: 'VNDRBDOxZ4',
-  },
 ]
