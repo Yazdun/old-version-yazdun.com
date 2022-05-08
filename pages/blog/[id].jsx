@@ -70,7 +70,7 @@ export default function Post({ postData }) {
             </a>
           </Link>
           <Link
-            href={`https://github.com/Yazdun/yazdun.com/tree/main/posts/${id}`}
+            href={`https://github.com/Yazdun/yazdun.com/tree/main/posts/${id}/index.md`}
           >
             <a className="link" target="_blank">
               <BsGithub />
